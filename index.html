@@ -1,0 +1,834 @@
+<!doctype html>
+<html class="no-js" lang="zxx"> 
+	<head>
+		<title>Effective Energy Limited | </title>
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Effective Energy Limited">
+		<meta name="author" content="pixiefy">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/owl.transitions.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/isotope.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/et-lant-font.css" />
+		<link rel="stylesheet" href="css/3dslider.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/material-design-iconic-font.css" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+
+		<style>
+			.swiper-container {
+				height: 300px;
+				width: 100%;
+				margin-top: 50px!important;
+				margin-bottom: 40px!important;
+			}
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 38px;
+				font-weight: 700;
+				background-color: #eee;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body class="apps-craft-v8">
+		<div id="app">
+			<div id="preloader" v-if="isLoaderContent" style="display: block;"></div>
+
+			<header class="apps-craft-main-menu-area" id="apps-craft-menus">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<div class="apps-craft-logo">
+								<a href="index.html">
+									<img src="img/logo.png" alt="Effective Energy Limited Logo">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-9 col-sm-9 col-xs-6">
+							<div class="apps-craft-menu-and-serach clear-both">
+								<span id="apps-craft-main-menu-icon">
+									<div class="la-ball-elastic-dots la-2x item-generate" style="color:#0c2472">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</span>
+								<nav id="apps-craft-menu" class="apps-craft-menu">
+									<ul>
+										<li><a href="#apps-craft-home">Home</a></li>
+										<li><a href="#effen-about">About</a></li>
+										<li><a href="#effen-tech">Technologies</a></li>
+										<li><a href="#effen-partners">Partners</a></li>
+										<li><a href="#apps-craft-team">Team</a></li>
+										<li><a href="#apps-craft-faq">Question?</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="apps-craft-welcome-section" id="apps-craft-home">
+
+				<div class="apps-craft-position-rel">
+					<div id="apps_craft_animation">
+						<div class="layer" data-depth="0.20"><img src="img/home-gradiant-bg-1.png" alt="Home Gradient Background 1"></div>
+						<div class="layer apps_craft_layer_z" data-depth="0.20"><img src="img/home-gradiant-bg-2.png" alt="Home Gradient Background 2"></div>
+					</div>
+				</div>
+				<div class="apps-craft-welcome-container">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-8 col-xs-12">
+								<div class="apps-craft-welcome-tbl">
+									<div class="apps-craft-welcome-tbl-c">
+										<div class="apps-craft-welcome-content">
+											<h1><span style="color: rgb(52, 70, 130); font-size: 0.7em;">EFFECTIVE ENERGY LTD</span><br><span>Charging</span> The Future</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-4 hidden-xs text-right">
+								<div class="apps-craft-welcome-screenshort">
+									<div class="apps-craft-welcome-tbl">
+										<div class="apps-craft-welcome-tbl-c">
+											<figure class="apps-craft-welcome-section-screen-short">
+												<img src="img/app-screen-short.png" alt="" class="wow fadeIn" data-wow-delay=".4s">
+											</figure>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="apps-craft-about-section" id="apps-craft-about">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="apps-craft-subscribe-content">
+									<div class="wow fadeInUp" data-wow-delay="200ms">
+										<h2><span>Subscribe</span> to our newsletter for fast updates & news</h2>
+									</div>
+									<div class="apps-craft-subscribe-form apps-craft-subscribe-form-box-shadow clear-both wow fadeInUp" data-wow-delay="400ms">
+										<form class="mc-form top">
+							        		<input class="mc-email" id="mc-email"  placeholder="Your Email Address..."  type="email" required="required" v-model="topSubscribe.email" />
+											<input class="submit-btn" type="submit" value="Subscribe" @click="subscribeTop($event)">
+							        		<label for="mc-email" style="opacity: 1;bottom: -60px;font-size: 20px;" v-if="topSubscribe.isSuccess || topSubscribe.isError">{{ topSubscribe.text }}</label>
+							    		</form>
+							    	</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="apps-craft-feature-section section-padding" id="effen-about">
+				<div class="container">
+					<div class="apps-craft-section-heading">
+						<h2>Innovations for All</h2>
+					</div>
+					<div class="row content-margin-top">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="apps-craft-feature-img text-center" itemscope itemtype="http://schema.org/ImageGallery">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<img src="img/feature-app-screenshort.png" alt="Effective Energy Limited Feature Image">
+									<span class="apps-craft-feature-ico icon-1x" data-bottom="transform:translateX(-103px)" data-top="transform:translateX(-63px);">
+										<img src="img/icon/Icon-1.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-2x" data-bottom="transform:translateX(-171px)" data-top="transform:translateX(-131px);">
+										<img src="img/icon/ICON-2.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-3x" data-bottom="transform:translateX(-153px)" data-top="transform:translateX(-113px);">
+										<img src="img/icon/12.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-4x" data-bottom="transform:translateX(-176px)" data-top="transform:translateX(-136px);">
+										<img src="img/icon/ICON-5.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-5x" data-bottom="transform:translateX(-97px)" data-top="transform:translateX(-55px);">
+										<img src="img/icon/ICON-7.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-6x" data-bottom="transform:translateY(-130px)" data-top="transform:translateY(-90px);">
+										<img src="img/icon/15.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-7x" data-bottom="transform:translateY(-134px)" data-top="transform:translateY(-94px);">
+										<img src="img/icon/icon-3.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-8x" data-bottom="transform:translateY(-160px)" data-top="transform:translateY(-120px);">
+										<img src="img/icon/ICON--9.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-9x" data-bottom="transform:translateX(-110px)" data-top="transform:translateX(-70px);">
+										<img src="img/icon/ICON-11.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-10x" data-bottom="transform:translateY(26px)" data-top="transform:translateY(26px);">
+										<img src="img/icon/13.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-11x" data-bottom="transform:translateX(74px)" data-top="transform:translateX(34px);">
+										<img src="img/icon/ICon4.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-12x" data-bottom="transform:translateX(160px)" data-top="transform:translateX(120px);">
+										<img src="img/icon/ICON-10.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-13x" data-bottom="transform:translateX(150px)" data-top="transform:translateX(110px);">
+										<img src="img/icon/ICON-6.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-14x" data-bottom="transform:translateX(80px)" data-top="transform:translateX(40px);">
+										<img src="img/icon/15.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-15x" data-bottom="transform:translateX(120px)" data-top="transform:translateX(80px);">
+										<img src="img/icon/13.png" alt="Small Icon">
+									</span>
+
+									<span class="apps-craft-feature-ico icon-16x" data-bottom="transform:translateX(-140px)" data-top="transform:translateX(-100px);">
+										<img src="img/icon/18.png" alt="Small Icon">
+									</span>
+
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="row wow fadeIn" style="pointer-events: none;">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<br>
+							<p style="text-align: justify;"><span style="color: #f79a00;">Effective Energy Limited</span> is an innovative software development company, focusing on <span style="color: #0c2472;">big data</span>, <span style="color: #0c2472;">AI</span>, <span style="color: #0c2472;">neural networks</span>, <span style="color: #0c2472;">distributed computing</span>, <span style="color: #0c2472;">blockchain applications</span> and <span style="color: #0c2472;">distributed ledger technology</span>.
+								<br>
+								<br>
+								The head office of the company is located in Hong Kong, the city being one of the most developed technological and financial centers of the world.
+								The company has an expert team of highly qualified blockchain developers, that have been developing D-Apps for more than 10 years.
+								The company founders have 15+ years experience of enterprise IT architecture, big data, AI, integration and solution delivery in telecoms and banking.
+								<br>
+								<br>
+								Using all the experience and knowledge of our team, the company develops beautiful IT products and delivers solutions, that are used by <span style="color: #0c2472;">top players of all market sectors</span> around the world!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="apps-craft-why-chose-us-section section-padding" id="apps-craft-chose-us" data-0="background-position:0px 10000px;" data-100000="background-position:0px -50000px;">
+				<div class="container">
+					<div class="apps-craft-section-heading">
+						<h2>WHy chose us</h2>
+					</div>
+					<div class="row content-margin-top">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="apps-craft-why-choose-us-container clear-both">
+								<div class="apps-craft-why-choose-us-container-inner clear-both">
+									<div class="apps-craft-why-chose-single clear-both">
+										<div class="apps-craft-why-chose-ico">
+											<span class="icon-lightbulb apps-craft-round">
+												<span class="apps-craft-dash-border"></span>
+											</span>
+										</div>
+										<div class="apps-craft-why-chose-txt">
+											<h3>Stack of technologies</h3>
+											<p>A team of experts, working in the Effective Energy Ltd, has all the skills to work with the most advanced technologies</p>
+										</div>
+									</div>
+									<div class="apps-craft-why-chose-single clear-both">
+										<div class="apps-craft-why-chose-ico">
+											<span class="icon-focus apps-craft-round">
+												<span class="apps-craft-dash-border"></span>
+											</span>
+										</div>
+
+										<div class="apps-craft-why-chose-txt">
+											<h3>Software Quality</h3>
+											<p>Our developments are our pride. We value the business of our customers and responsibly approach the QA of our products</p>
+										</div>
+									</div>
+									<div class="apps-craft-why-chose-single clear-both">
+										<div class="apps-craft-why-chose-ico">
+											<span class="icon-trophy apps-craft-round"></span>
+										</div>
+
+										<div class="apps-craft-why-chose-txt">
+											<h3>Award winning team</h3>
+											<p>Our team members are winners of many world programming contests, which shows the true skills of our developers</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="apps-carft-screen-short-ssection section-padding-small" id="effen-tech">
+				<div class="container">
+					<div class="apps-craft-section-heading">
+						<h2>technologies we use</h2>
+					</div>
+
+					<div class="content" style="margin-top: 10px;">
+						<div class="apps-carft-screen-short-content">
+							<div class="app-screen-mobile-image"></div>
+							<swiper ref="awesomeSwiperA" :options="swiperOptionA">
+								<swiper-slide>
+									<figure style="background: #0c2572; width: 270px; height: 270px; border-radius: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+										<img src="./logo/haskell.svg" alt="" style="width: 60%;">
+									</figure>
+								</swiper-slide>
+
+								<swiper-slide>
+									<figure style="background: #0c2572; width: 270px; height: 270px; border-radius: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+										<img src="./logo/java.svg" alt="" style="width: 60%;">
+									</figure>
+								</swiper-slide>
+
+								<swiper-slide>
+									<figure style="background: #0c2572; width: 270px; height: 270px; border-radius: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+										<img src="./logo/js.svg" alt="" style="width: 60%;">
+									</figure>
+								</swiper-slide>
+
+								<div class="swiper-button-prev" slot="button-prev"></div>
+								<div class="swiper-button-next" slot="button-next"></div>
+							</swiper>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="apps-craft-testimonial-section section-padding" id="effen-partners">
+				<div class="container">
+					<div class="apps-craft-section-heading white">
+						<h2>Our Partners</h2>
+					</div>
+					<div class="content-margin-top">
+						<div class="apps-craft-testimonial-slider-wraper clear-both">
+							<div id="apps-craft-commentor-slider" class="wow fadeIn" itemscope itemtype="http://schema.org/ImageGallery">
+								<div class="apps-craft-testimonial-content clear-both">
+									<div class="apps-craft-testimonial-single clear-both">
+										<div class="apps-craft-commentor-img-continer">
+											<figure class="apps-craft-commentor-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<img src="img/commentor-img.png" alt="">
+											</figure>
+										</div>
+										<div class="apps-craft-rating-and-bio clear-both">
+											<p>ITMO University is a large state university in Saint Petersburg and is one of Russia's National Research Universities. ITMO University is one of 15 Russian universities that have been selected to participate in the international research and education centers. Research priorities of ITMO University are concentrated in information and photonic technologies.
+												<br>
+												Programmers of ITMO University are seven-time champions ACM ICPC!
+											</p>
+											<div class="apps-craft-commentor-bio">
+												<h3>ITMO University  <span style="color: #ff9f00;">|</span>  <a style="font-weight: 100; color: #ffffff;" href="http://en.ifmo.ru/en/">website</a></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="apps-craft-testimonial-content clear-both">
+									<div class="apps-craft-testimonial-single clear-both">
+										<div class="apps-craft-commentor-img-continer">
+											<figure class="apps-craft-commentor-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<img src="img/commentor-img-2.png" alt="">
+											</figure>
+										</div>
+										<div class="apps-craft-rating-and-bio clear-both">
+											<p>Develop software products for strategic customers in Nevada, USA. The result of long-term cooperation is implemented software solutions in the field of nondestructive testing in the industry, data collection of inspections of equipment of electric power companies, management and assessment of assets and other areas. We create software for a wide range of people - from engineering and technical specialists and office managers, to ordinary users, automating everyday routine business.</p>
+											<div class="apps-craft-commentor-bio">
+												<h3>Cliff Edge LLC</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="apps-craft-testimonial-content clear-both">
+									<div class="apps-craft-testimonial-single clear-both">
+										<div class="apps-craft-commentor-img-continer">
+											<figure class="apps-craft-commentor-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<img src="img/commentor-img-4.png" alt="">
+											</figure>
+										</div>
+										<div class="apps-craft-rating-and-bio clear-both">
+											<p>The Association is an organized, distributed expert team (line managers) who are able to accept an incoming request and develop a plan practical implementation, with the help of several specialized teams, or individual experts, representing their services by outsourcing.</p>
+											<div class="apps-craft-commentor-bio">
+												<h3>St.Petersburg Association of blockchain experts  <span style="color: #ff9f00;">|</span>  <a style="font-weight: 100; color: #ffffff;" href="http://blockchain-spb.org">website</a></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="customNavigation">
+								<a class="prev"><i class="zmdi zmdi-long-arrow-left zmdi-hc-fw"></i></a>
+								<a class="next"><i class="zmdi zmdi-long-arrow-right zmdi-hc-fw"></i></a>
+							</div>
+						</div>
+
+						<div id="apps-craft-testimonial-thumb" class="text-center wow fadeIn" itemscope itemtype="http://schema.org/ImageGallery">
+							<div class="item">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<img src="img/testimonial-thumb-1.png" alt="Effective Energy Limited Commentor Thumb">
+								</figure>
+							</div>
+							<div class="item">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<img src="img/testimonial-thumb-2.png" alt="Effective Energy Limited Commentor Thumb">
+								</figure>
+							</div>
+							<div class="item">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<img src="img/testimonial-thumb-4.png" alt="Effective Energy Limited Commentor Thumb">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="apps-craft-team-section" id="apps-craft-team">
+				<div class="team-parallax-bg section-padding" data-0="background-position:10000px 50%;" data-100000="background-position:50000px 0px;">
+					<div class="container">
+						<div class="apps-craft-section-heading">
+							<h2>team</h2>
+						</div>
+						<div class="row content-margin-top">
+							<div class="col-md-4 col-sm-4 col-xs-6 apps-craft-team">
+								<div class="apps-craft-single-team wow fadeIn" data-wow-delay="600ms" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="apps-craft-team-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<div class="apps-craft-team-member-pic">
+											<img src="img/team-member-3.jpg" alt="Effective Energy Limited Team Member Image">
+
+											<div class="apps-craft-team-hover">
+												<div class="apps-craft-social-link">
+													<ul>
+														<li><a href="#"><i class="zmdi zmdi-facebook zmdi-hc-fw"></i></a></li>
+														<li><a href="#"><i class="zmdi zmdi-google-plus zmdi-hc-fw"></i></a></li>
+														<li><a href="#"><i class="zmdi zmdi-twitter zmdi-hc-fw"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</figure>
+									<div class="apps-craft-team-bio">
+										<h2>Mikhail Hramyka</h2>
+										<h5>CEO, <span>Effective Energy Ltd</span></h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-4 col-xs-6 apps-craft-team">
+								<div class="apps-craft-single-team wow fadeIn" data-wow-delay="200ms" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="apps-craft-team-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<div class="apps-craft-team-member-pic">
+											<img src="img/team-member-1.jpg" alt="Effective Energy Limited Team Member Image">
+
+											<div class="apps-craft-team-hover">
+												<div class="apps-craft-social-link">
+													<ul>
+														<li><a href="#"><i class="zmdi zmdi-facebook zmdi-hc-fw"></i></a></li>
+														<li><a href="#"><i class="zmdi zmdi-google-plus zmdi-hc-fw"></i></a></li>
+														<li><a href="#"><i class="zmdi zmdi-twitter zmdi-hc-fw"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</figure>
+
+									<div class="apps-craft-team-bio">
+										<h2>Anton Belyakov</h2>
+										<h5>CMO, <span>Effective Energy Ltd</span></h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6 apps-craft-team">
+								<div class="apps-craft-single-team wow fadeIn" data-wow-delay="400ms" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="apps-craft-team-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<div class="apps-craft-team-member-pic">
+											<img src="img/team-member-2.jpg" alt="Effective Energy Limited Team Member Image">
+
+											<div class="apps-craft-team-hover">
+												<div class="apps-craft-social-link">
+													<ul>
+														<li><a href="#"><i class="zmdi zmdi-facebook zmdi-hc-fw"></i></a></li>
+														<li><a href="#"><i class="zmdi zmdi-google-plus zmdi-hc-fw"></i></a></li>
+														<li><a href="#"><i class="zmdi zmdi-twitter zmdi-hc-fw"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</figure>
+
+									<div class="apps-craft-team-bio">
+										<h2>Yanis Zemturis</h2>
+										<h5>CLO, <span>Effective Energy Ltd</span></h5>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="apps-craft-sub-scribe-section section-padding" id="apps-craft-subscribe">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="apps-craft-subscribe-wraper wow fadeIn">
+								<div class="apps-craft-subscribe-content">
+									<h2><span>Subscribe</span> to our newsletter for fast updates & news</h2>
+									<div class="apps-craft-subscribe-form clear-both">
+										<form class="mc-form top">
+									        <input class="mc-email" id="mc-email" placeholder="Your Email Address..."  type="email" required="required" v-model="bottomSubscribe.email" />
+											<input class="submit-btn" type="submit" value="Subscribe" @click="subscribeBottom($event)"/>
+									        <label for="mc-email" v-if="bottomSubscribe.isSuccess || bottomSubscribe.isError" style="opacity: 1;bottom: 100px;font-size: 20px;">{{ bottomSubscribe.text }}</label>
+									    </form>
+									</div>
+								</div>
+								<div class="apps-craft-3-bar">
+									<img src="img/sub-section-3bar.png" alt="Effective Energy Limited Simple 3 Bars">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="apps-craft-faq-section section-padding" id="apps-craft-faq">
+				<div class="container">
+					<div class="apps-craft-section-heading">
+						<h2>QUESTION?</h2>
+					</div> <!-- .apps-craft-section-heading END -->
+					<div class="row content-margin-top">
+						<div class="col-md-6 col-sm-6 col-xs-12" v-if="false">
+							<div class="apps-craft-accordion wow fadeIn" data-wow-delay="400ms">
+								<div class="panel-group" id="accordion">
+
+									<div class="panel panel-default" v-for="(faq, faqIndex) in faqContent" :key="faq._id">
+										<div class="panel-heading" @click="openFaqBlock(faqIndex)">
+											<h4 class="panel-title click">
+												<a data-toggle="collapse" data-parent="#accordion" :href="'#collapse'+faqIndex" :class="{ 'collapsed': faqIndex === openedFaqBlock }">{{ faq.title }}</a>
+											</h4>
+										</div>
+										<div :id="'#collapse'+faqIndex" class="panel-collapse collapse" :class="{ 'in': faqIndex === openedFaqBlock }">
+											<div class="panel-body">{{ faq.subtitle }}</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="apps-craft-contact-form-content wow fadeIn" data-wow-delay="800ms">
+								<div class="apps-craft-contact-form-content-inner">
+									<h2>Any Other question? You can <span>Contact Us.</span></h2>
+									<div class="apps-craft-contact-form">
+										<form action="#" method="POST" id="apps-craft-form">
+											<input type="email" id="apps-craft-input-email" name="email" placeholder="Enter your email" v-model="questionBlock.email">
+											<textarea name="massage" id="apps-craft-input-message" cols="30" rows="10" placeholder="Your Message Here.." v-model="questionBlock.message"></textarea>
+
+											<div class="apps-craft-submit-btn-ar">
+												<input type="submit" name="Send Message" value="Send Message" id="apps-craft-input-send" @click="sendQuestion($event)">
+											</div>
+										</form>
+										<div v-if="questionBlock.isError || questionBlock.isSuccess">
+											<br />
+											<p>{{ questionBlock.text }}</p>
+										</div>
+									</div>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<footer class="apps-craft-footer-section" id="apps-craft-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="apps-craft-footer-logo-and-social">
+								<figure class="apps-craft-footer-logo text-center">
+									<a href="#">
+										<img src="img/footer-logo.png" alt="Effective Energy Limited Footer Logo" class="wow fadeInUp" data-wow-delay=".2s">
+									</a>
+								</figure>
+								<div style="margin-top: 21px;" class="apps-craft-social-link wow fadeInUp" data-wow-delay=".4s">
+									<ul>
+										<li>18/F Wanchai Central Building, 89 Lockhart rd. Wanchai, Hong Kong</li>
+									</ul>
+								</div>
+							</div>
+							<div class="apps-craft-footer-menu-and-copyright-txt clear-both">
+								<div class="apps-craft-copyright-txt wow fadeInUp" data-wow-delay=".6s">
+									<p>&copy; 2018  EFFECTIVE ENERGY LTD.<br>All Rights Reserved</p>
+								</div>
+								<nav class="apps-craft-footer-menu wow fadeInUp" data-wow-delay=".8s">
+									<ul>
+										<li><a href="#apps-craft-home">Home</a></li>
+										<li><a href="#effen-about">About</a></li>
+										<li><a href="#effen-tech">Technologies</a></li>
+										<li><a href="#effen-partners">Partners</a></li>
+										<li><a href="#apps-craft-team">Team</a></li>
+										<li><a href="#apps-craft-faq">Question?</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/isotope.pkgd.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/skrollr.min.js"></script>
+			<script src="js/utils.js"></script>
+			<script src="js/jquery.parallax.js"></script>
+			<script src="js/wow.js"></script>
+			<script src="js/jquery.tubular.1.0.js"></script>
+			<script src="js/particles.min.js"></script>
+
+			<script src="js/main.js"></script>
+
+		</div>
+
+	</body>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper@3.1.2/dist/vue-awesome-swiper.js"></script>
+
+	<script>
+		Vue.use(VueAwesomeSwiper)
+		let app = new Vue({
+			el: '#app',
+			components: {
+				LocalSwiper: VueAwesomeSwiper.swiper,
+				LocalSlide: VueAwesomeSwiper.swiperSlide,
+			},
+			data: {
+				swiperOptionA: {
+					slidesPerView: 3,
+					centeredSlides: true,
+					spaceBetween: 30,
+					loop: true,
+			        navigation: {
+			            nextEl: '.swiper-button-next',
+			            prevEl: '.swiper-button-prev'
+			        }
+				},
+				swiperOptionB: {
+					pagination: {
+						el: '.swiper-pagination',
+						dynamicBullets: true
+					}
+				},
+				faqContent: [],
+				isLoaderContent: false,
+				openedFaqBlock: '',
+				partnersContent: [],
+				topSubscribe: {
+					email: '',
+					isSuccess: false,
+					text: '',
+					isError: false
+				},
+				bottomSubscribe: {
+					email: '',
+					isSuccess: false,
+					text: '',
+					isError: false
+				},
+				questionBlock: {
+					email: '',
+					message: '',
+					isError: false,
+					isSuccess: false,
+					text: ''
+				}
+			},
+			computed: {
+				swiperA() {
+					return this.$refs.awesomeSwiperA.swiper
+				},
+				swiperB() {
+					return this.$refs.awesomeSwiperB.swiper
+				}
+			},
+			methods: {
+				sendQuestion (e) {
+					e.preventDefault();
+
+					this.questionBlock.isError = false;
+					this.questionBlock.isSuccess = false;
+
+					if (this.questionBlock.email.length === 0) {
+						this.questionBlock.isError = true;
+						return this.questionBlock.text = 'Enter your email';
+					}
+
+					if (this.questionBlock.message.length === 0) {
+						this.questionBlock.isError = true;
+						return this.questionBlock.text = 'Enter your message';
+					}
+
+					if (this.validateEmail(this.questionBlock.email)) {
+						this.questionBlock.isSuccess = true;
+
+						this.$http.post(`http://35.171.19.235:3000/subscribe/new-question`, {
+							"email": this.questionBlock.email,
+							"message": this.questionBlock.message
+						}, {
+							headers : {
+								'Content-Type': 'application/json; charset=UTF-8',
+								'Accept': 'application/json'
+							}
+						}).then(response => {
+							this.questionBlock.isSuccess = true;
+							return this.questionBlock.text = 'Your message was successfully sent!';
+						}, response => {
+							this.questionBlock.isError = true;
+							this.questionBlock.text = 'Server error when sending a message';
+						})
+					} else {
+						this.questionBlock.isError = true;
+						return this.questionBlock.text = 'Enter valid email';
+					}
+				},
+				validateEmail (email) {
+					let regex = /\S+@\S+\.\S+/;
+					return regex.test(email);
+				},
+				subscribeTop (e) {
+					e.preventDefault();
+					this.topSubscribe.isSuccess = false;
+					this.topSubscribe.isError = false;
+					if (this.topSubscribe.email.length === 0) {
+						this.topSubscribe.isError = true;
+						return this.topSubscribe.text = 'Enter your email';
+					}
+					if (this.validateEmail(this.topSubscribe.email)) {
+						this.topSubscribe.isSuccess = true;
+						this.topSubscribe.text = 'Loading...';
+
+						this.$http.post(`http://35.171.19.235:3000/subscribe`, {
+							"email": this.topSubscribe.email
+						}, {
+							headers : {
+								'Content-Type': 'application/json; charset=UTF-8',
+								'Accept': 'application/json'
+							}
+						}).then(response => {
+							this.topSubscribe.isSuccess = true;
+							this.topSubscribe.text = response.body.message;
+							return this.topSubscribe.email = '';
+						}, response => {
+							this.topSubscribe.isError = true;
+							return this.topSubscribe.text = 'Server error, pleasy try later';
+						})
+
+					} else {
+						this.topSubscribe.isError = true;
+						return this.topSubscribe.text = 'Invalid email';
+					}
+				},
+				subscribeBottom (e) {
+					e.preventDefault();
+					this.bottomSubscribe.isSuccess = false;
+					this.bottomSubscribe.isError = false;
+					if (this.bottomSubscribe.email.length === 0) {
+						this.bottomSubscribe.isError = true;
+						return this.bottomSubscribe.text = 'Enter your email';
+					}
+					if (this.validateEmail(this.bottomSubscribe.email)) {
+						this.bottomSubscribe.isSuccess = true;
+						this.bottomSubscribe.text = 'Loading...';
+
+						this.$http.post(`http://35.171.19.235:3000/subscribe`, {
+							"email": this.bottomSubscribe.email
+						}, {
+							headers : {
+								'Content-Type': 'application/json; charset=UTF-8',
+								'Accept': 'application/json'
+							}
+						}).then(response => {
+							this.bottomSubscribe.isSuccess = true;
+							this.bottomSubscribe.text = response.body.message;
+							return this.bottomSubscribe.email = '';
+						}, response => {
+							this.bottomSubscribe.isError = true;
+							return this.bottomSubscribe.text = 'Server error, pleasy try later';
+						})
+
+					} else {
+						this.bottomSubscribe.isError = true;
+						return this.bottomSubscribe.text = 'Invalid email';
+					}
+				},
+				getFaqContent () {
+					this.$http.get(`http://35.171.19.235:3000/faq`, {
+						headers : {
+							'Content-Type': 'application/json; charset=UTF-8',
+							'Accept': 'application/json'
+						}
+					}).then(response => {
+						this.faqContent = response.body;
+						return this.getPartnersBlock();
+					}, response => {
+						console.log('E', response);
+					})
+				},
+				openFaqBlock (index) {
+					if (index === this.openedFaqBlock) {
+						this.openedFaqBlock = '';
+					} else {
+						this.openedFaqBlock = index;
+					}
+				},
+				getPartnersBlock () {
+					return this.isLoaderContent = false;
+				}
+			},
+			created() {
+				//this.isLoaderContent = true;
+				//this.getFaqContent();
+			}
+		})
+	</script>
+</html>
